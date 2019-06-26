@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+  <!--spring aop 注解代理方式-->
+  <aop:aspectj-autoproxy/>
+ <!-- 启动注解驱动-->
+ <context:annotation-config />
+  <!-- 启动注解扫描装配-->
+  <context:component-scan base-package="com.project.*.*"/>
+
+    <import resource="classpath:spring/spring-mybatis.xml"/>
+    <bean id="aopBean" class="com.project.aop.Aspect2"></bean>
+    <!--<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+        &lt;!&ndash;数据库连接设置  &ndash;&gt;
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver"></property>
+
+        <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"></property>
+        <property name="jdbcUsername" value="root"></property>
+        <property name="jdbcPassword" value="123456"></property>
+        &lt;!&ndash;建表策略&ndash;&gt;
+        <property name="databaseSchemaUpdate" value="true"></property>
+    </bean>-->
+</beans>

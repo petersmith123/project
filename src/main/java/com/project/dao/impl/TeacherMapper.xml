@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.dao.TeacherMapper">
+<resultMap id="teacherResult" type="com.project.pojo.Teacher">
+    <id column="id" property="id" jdbcType="INTEGER"></id>
+    <result column="name" property="name" jdbcType="VARCHAR"></result>
+    <result column="age" property="age" jdbcType="INTEGER" javaType="int"></result>
+</resultMap>
+
+    <select id="getTeacherByID" resultMap="teacherResult" parameterType="int">
+        select  * from teacher where  id=#{id}
+    </select>
+
+    <select id="getTeacherByMap" resultMap="teacherResult" parameterType="com.project.pojo.Teacher" >
+       select  <include refid="baseCloumn"/>
+       from Teacher WHERE 1=1
+     <if test="name!=null and name!='' ">
+
+          and name like concat('%',#{name,jdbcType=VARCHAR},'%')
+     </if>
+        <if test="age!=0 ">
+            and age =#{age,jdbcType=INTEGER}
+        </if>
+
+
+    </select>
+
+    <sql id="baseCloumn">
+        id,name,age
+    </sql>
+
+    <select id="getTeacherIn" parameterType="list" resultMap="teacherResult">
+        select
+        <include refid="baseCloumn"/>
+        from Teacher
+        <where>
+            <if test="list!=null and list.size>0">
+                id in
+            <foreach collection="list" item="id" open="(" separator="," close=")">
+                 #{id}
+            </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="getByChose" parameterType="Integer" resultMap="teacherResult" >
+        select  <include refid="baseCloumn"/>
+        from Teacher
+        <where>
+            <if test="_parameter!=0">
+                <choose>
+                    <when test="_parameter ==-1">
+                      id in(1,2,3)
+                    </when>
+                    <otherwise>
+                        id=#{_parameter}
+                    </otherwise>
+                </choose>
+            </if>
+
+        </where>
+    </select>
+
+
+    <select id="selectTrim" parameterType="com.project.pojo.Teacher" resultMap="teacherResult">
+           SELECT   <include refid="baseCloumn"/> from Teacher
+        <trim prefix="where" prefixOverrides="and |or" >
+          <if test="name!=null and name!=''">
+            and  name like  CONCAT('%',#{name},'%')
+          </if>
+            <if test="age!=0">
+              and   age=#{age}
+            </if>
+        </trim>
+    </select>
+
+    <update id="upadate1"  parameterType="com.project.pojo.Teacher" >
+         update  teacher
+         <set>
+             <if test="name!=null and name!=''">
+                 name=#{name},
+             </if>
+             <if test="age!=null and age!=''">
+                 age=#{age}
+             </if>
+         </set>
+        where  id=#{id}
+    </update>
+
+    <update id="update2" parameterType="com.project.pojo.Teacher">
+        UPDATE teacher
+        <trim prefix="set" suffixOverrides=",">
+           <if test="name!=null and name!=''">
+            name=#{name},
+        </if>
+        <if test="age!=null and age!=''">
+            age=#{age}
+        </if>
+        </trim>
+       where id=#{id}
+    </update>
+    <insert id="insertByEach" parameterType="java.util.List" >
+      insert into teacher
+
+          (name,age) VALUES
+        <foreach collection="list" item="tea" separator="," >
+              <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="tea.id!=null and tea.id!=0">
+                    #{tea.id},
+                </if>
+                <if test="tea.name!=null and tea.name!=''">
+                   #{tea.name},
+                </if>
+                <if test="tea.age!=null and tea.age!=0">
+                   #{tea.age}
+                </if>
+              </trim>
+        </foreach>
+    </insert>
+    <insert id="insertTeacher" useGeneratedKeys="true"  keyProperty="id" parameterType="com.project.pojo.Teacher">
+        INSERT INTO teacher
+          (name,age)
+          values (#{name},#{age})
+    </insert>
+
+    <insert id="insertTeacher2" useGeneratedKeys="true"  keyProperty="id" >
+        INSERT INTO teacher
+          (name,age)
+          values (#{name},#{age})
+    </insert>
+
+
+
+</mapper>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link rel="shortcut icon" href="../static/ico/fav.ico" type="image/x-icon" />
+    <script src="../static/JS/jquery-3.2.1.js"></script>
+</head>
+<body>
+ <h1>Hello World</h1>
+<script>
+    $(document).ready(function () {
+        test()
+    })
+    function test() {
+
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8080/sys/test",
+            contentType: "application/json;charset=utf-8",
+            data: JSON.stringify(""),
+            dataType: "json",
+
+            success: function(data) {
+                console.log(JSON.stringify(data))
+
+            },
+            error: function(error) {
+                console.log(JSON.stringify(error));
+            }
+        });
+    }
+
+</script>
+</body>
+</html>
