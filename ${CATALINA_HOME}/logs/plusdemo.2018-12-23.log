@@ -1,0 +1,21 @@
+2018-12-23 19:28:09.957 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.Test1]: using defaults.
+2018-12-23 19:28:10.088 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2018-12-23 19:28:10.445 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2018-12-23 19:28:12.369 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@59fd97a8: startup date [Sun Dec 23 19:28:12 CST 2018]; root of context hierarchy
+2018-12-23 19:28:13.445 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2018-12-23 19:28:13.710 [Thread-2] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@59fd97a8: startup date [Sun Dec 23 19:28:12 CST 2018]; root of context hierarchy
+2018-12-23 19:28:13.718 [Thread-2] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed
+2018-12-23 19:29:17.166 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.Test1]: using defaults.
+2018-12-23 19:29:17.354 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2018-12-23 19:29:17.608 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2018-12-23 19:29:19.014 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@59fd97a8: startup date [Sun Dec 23 19:29:19 CST 2018]; root of context hierarchy
+2018-12-23 19:29:19.857 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2018-12-23 19:29:20.097 [Thread-2] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@59fd97a8: startup date [Sun Dec 23 19:29:19 CST 2018]; root of context hierarchy
+2018-12-23 19:29:20.103 [Thread-2] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed
+2018-12-23 19:34:03.600 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.Test1]: using defaults.
+2018-12-23 19:34:03.762 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2018-12-23 19:34:04.023 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2018-12-23 19:34:05.588 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@6973b51b: startup date [Sun Dec 23 19:34:05 CST 2018]; root of context hierarchy
+2018-12-23 19:34:06.398 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2018-12-23 19:34:06.612 [Thread-1] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@6973b51b: startup date [Sun Dec 23 19:34:05 CST 2018]; root of context hierarchy
+2018-12-23 19:34:06.617 [Thread-1] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed

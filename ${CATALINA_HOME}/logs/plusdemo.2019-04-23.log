@@ -1,0 +1,33 @@
+2019-04-23 09:48:48.088 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.TestMybatis]: using defaults.
+2019-04-23 09:48:48.289 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 09:48:48.563 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2019-04-23 09:48:48.648 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 09:48:48.689 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@498d318c: startup date [Tue Apr 23 09:48:48 CST 2019]; root of context hierarchy
+2019-04-23 09:48:48.857 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate] - Skipping MapperFactoryBean with name 'teacherMapper' and 'com.project.dao.TeacherMapper' mapperInterface. Bean already defined with the same name!
+2019-04-23 09:48:48.857 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[com.project.dao]' package. Please check your configuration.
+2019-04-23 09:48:49.192 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2019-04-23 09:48:50.118 [Thread-1] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@498d318c: startup date [Tue Apr 23 09:48:48 CST 2019]; root of context hierarchy
+2019-04-23 09:48:50.122 [Thread-1] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed
+2019-04-23 09:49:02.701 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.TestMybatis]: using defaults.
+2019-04-23 09:49:02.887 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 09:49:03.198 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2019-04-23 09:49:03.286 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 09:49:03.335 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@72057ecf: startup date [Tue Apr 23 09:49:03 CST 2019]; root of context hierarchy
+2019-04-23 09:49:03.509 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate] - Skipping MapperFactoryBean with name 'teacherMapper' and 'com.project.dao.TeacherMapper' mapperInterface. Bean already defined with the same name!
+2019-04-23 09:49:03.509 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[com.project.dao]' package. Please check your configuration.
+2019-04-23 09:49:03.750 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2019-04-23 09:49:04.562 [Thread-1] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@72057ecf: startup date [Tue Apr 23 09:49:03 CST 2019]; root of context hierarchy
+2019-04-23 09:49:04.567 [Thread-1] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed
+2019-04-23 18:07:36.365 [main] INFO [org.springframework.test.context.TestContextManager.retrieveTestExecutionListeners] - @TestExecutionListeners is not present for class [class com.springbasetest.TestMybatis]: using defaults.
+2019-04-23 18:07:36.628 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 18:07:37.084 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from URL [file:/C:/Develop/IdeaWorkPlace/MyWeb/target/classes/spring/applicationContext.xml]
+2019-04-23 18:07:37.188 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/spring-mybatis.xml]
+2019-04-23 18:07:37.241 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@1ab3a8c8: startup date [Tue Apr 23 18:07:37 CST 2019]; root of context hierarchy
+2019-04-23 18:07:37.660 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.checkCandidate] - Skipping MapperFactoryBean with name 'teacherMapper' and 'com.project.dao.TeacherMapper' mapperInterface. Bean already defined with the same name!
+2019-04-23 18:07:37.661 [main] WARN [org.mybatis.spring.mapper.ClassPathMapperScanner.doScan] - No MyBatis mapper was found in '[com.project.dao]' package. Please check your configuration.
+2019-04-23 18:07:38.064 [main] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} inited
+2019-04-23 18:07:38.832 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: SELECT id,name,age from Teacher where name like CONCAT('%',?,'%') and age=? 
+2019-04-23 18:07:38.989 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 小(String), 23(Integer)
+2019-04-23 18:07:39.013 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-23 18:07:39.016 [Thread-1] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@1ab3a8c8: startup date [Tue Apr 23 18:07:37 CST 2019]; root of context hierarchy
+2019-04-23 18:07:39.021 [Thread-1] INFO [com.alibaba.druid.support.logging.Log4j2Impl.info] - {dataSource-1} closed

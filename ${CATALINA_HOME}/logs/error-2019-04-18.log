@@ -1,0 +1,2 @@
+2019.04.18 12:37:29.202 [main] ERROR [com.alibaba.druid.support.logging.Log4j2Impl.error:58] - maxIdle is deprecated
+2019.04.18 12:42:13.195 [main] ERROR [com.alibaba.druid.support.logging.Log4j2Impl.error:58] - maxIdle is deprecated
